@@ -91,16 +91,6 @@ h2, h3 {
 }
 
 /*ballet page*/
-#ballet-h1 {
-	font-family: 'Passion One', cursive;
-	text-align: center;
-	color: darkred;
-}
-
-.ballet-pics {
-	height: 200px;
-}
-
 #pic-and-caption {
 	width: 300px;
 	margin-left: auto;
@@ -128,55 +118,73 @@ h2, h3 {
 	margin: 10px;
 	border-radius: 10px;
 }
-	
+
 #barre-content {
 	clear: left;
-	float: left;
-	width: 40%;
-	margin: 5% 5% 5% 5%;
 }
 
-#barre-content p {
+@media screen and (min-width: 600px) {
+	.picandexpl {
+		margin: auto;
+	}
+	
+	.ballet-pics {
+		height: 300px;
+	}
+
+	.picandexpl img{
+		margin: auto;
+	}
+	
+	.picandexpl {
+		float: left;
+		width: 80%;
+		margin: 5% auto;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.ballet-pics {
+		height: 200px;
+	}
+	
+	#barre-content {
+		clear: left;
+		float: left;
+		width: 40%;
+		margin: 5% 5% 5% 5%;
+	}
+
+	#floor-content {
+		float: left;
+		width: 40%;
+		margin: 5% 5% 5% 0;
+	}
+
+	#pointe-content {
+		clear: left;
+		float: left;
+		width: 40%;
+		margin: 0 5% 5% 5%;
+	}
+
+	#reverence-content {
+		float: left;
+		width: 40%;
+		margin: 0 5% 5% 0;
+	}
+}
+	
+.picandexpl p {
 	background-color: lightgray;
 	padding: 10px;
 	border-radius: 10px;
 }
 
-#floor-content {
-	float: left;
-	width: 40%;
-	margin: 5% 5% 5% 0;
-}
-
-#floor-content p {
-	background-color: lightgray;
-	padding: 10px;
-	border-radius: 10px;
-}
-
-#pointe-content {
-	clear: left;
-	float: left;
-	width: 40%;
-	margin: 0 5% 5% 5%;
-}
-
-#pointe-content p {
-	background-color: lightgray;
-	padding: 10px;
-	border-radius: 10px;
-}
-
-#reverence-content {
-	float: left;
-	width: 40%;
-	margin: 0 5% 5% 0;
-}
-
-#reverence-content p {
-	background-color: lightgray;
-	padding: 10px;
-	border-radius: 10px;
+#ballet-h1 {
+	font-family: 'Passion One', cursive;
+	text-align: center;
+	color: darkred;
 }
 
 #conclusion {
@@ -221,3 +229,5 @@ iframe {
 #resume-content ul li {
 	list-style-type: circle;
 }
+
+/*Google Maps API page*/
