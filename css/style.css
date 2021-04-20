@@ -91,6 +91,12 @@ h2, h3 {
 }
 
 /*ballet page*/
+#ballet-h1 {
+	font-family: 'Passion One', cursive;
+	text-align: center;
+	color: darkred;
+}
+
 #pic-and-caption {
 	width: 300px;
 	margin-left: auto;
@@ -123,9 +129,23 @@ h2, h3 {
 	clear: left;
 }
 
+.ballet-pics {
+	height: 200px;
+}
+
+.picandexpl p {
+	background-color: lightgray;
+	padding: 10px;
+	border-radius: 10px;
+}
+
 @media screen and (min-width: 600px) {
 	.picandexpl {
-		margin: auto;
+		margin: 0 auto;
+	}
+	
+	.picandexpl img {
+		text-align: center;
 	}
 	
 	.ballet-pics {
@@ -139,7 +159,7 @@ h2, h3 {
 	.picandexpl {
 		float: left;
 		width: 80%;
-		margin: 5% auto;
+		margin: 0 auto;
 	}
 }
 
@@ -173,18 +193,6 @@ h2, h3 {
 		width: 40%;
 		margin: 0 5% 5% 0;
 	}
-}
-	
-.picandexpl p {
-	background-color: lightgray;
-	padding: 10px;
-	border-radius: 10px;
-}
-
-#ballet-h1 {
-	font-family: 'Passion One', cursive;
-	text-align: center;
-	color: darkred;
 }
 
 #conclusion {
