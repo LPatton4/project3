@@ -3,13 +3,19 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
 		<title>Proj 3 Google Maps API</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<script src="js/script.js"></script>
-		<!--copied from Google Fonts-->
+		<!--for fonts-->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<!--for Google Maps API-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACKn4Nhy9TUpRFGoYxxqQ031xsm7Q2aO0&callback=initMap"
+    async defer></script>
 	</head>
 	<body>
 		<header>
@@ -22,5 +28,12 @@
 				</ul>
 			</nav>
 		</header>
+		<h1 id="maph1">Important Places in My Life</h1>
+		<div id="map"></div>
+		<section id="mapdescr">
+			<p><strong>Russell Tablert Dance Studio: </strong>This is where I took ballet classes for 14 years.</p>
+			<p><strong>Jones College Prep: </strong>This is where I went to high school.</p>
+			<p><strong>Fuller Park: </strong>This is the park district where I started taking music classes with the Intonation Music Workshop.</p>
+		</section>
 	</body>
 </html>
