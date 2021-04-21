@@ -259,3 +259,11 @@ iframe {
 	background-color: lightgray;
 	border-radius: 10px;
 }
+
+.bxslider img {
+	width: 400px;
+}
+
+.bxslider {
+	margin: 0 auto;
+}
